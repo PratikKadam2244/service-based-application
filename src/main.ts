@@ -9,6 +9,7 @@ import { AdminComponent } from './app/pages/admin/admin.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   template: '<router-outlet></router-outlet>',
   imports: [RouterOutlet]
 })
