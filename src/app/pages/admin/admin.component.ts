@@ -137,7 +137,7 @@ import { Booking, AdminStats, Service } from '../../models/interfaces';
               <div class="table-col">
                 <div class="service-info">
                   <div class="service-name">{{ booking.service?.title || 'Service' }}</div>
-                  <div class="service-category">{{ booking.service?.category.name || 'General' }}</div>
+                  <div class="service-category">{{ booking.service?.category?.name || 'General' }}</div>
                 </div>
               </div>
               

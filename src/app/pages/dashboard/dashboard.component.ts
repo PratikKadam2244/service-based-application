@@ -101,7 +101,7 @@ import { Booking, User } from '../../models/interfaces';
               <div class="booking-header">
                 <div class="booking-service">
                   <h3 class="service-name">{{ booking.service?.title || 'Service' }}</h3>
-                  <div class="service-category">{{ booking.service?.category.name || 'General' }}</div>
+                  <div class="service-category">{{ booking.service?.category?.name || 'General' }}</div>
                 </div>
                 <div class="booking-status">
                   <span class="status-badge" [ngClass]="'status-' + booking.status">

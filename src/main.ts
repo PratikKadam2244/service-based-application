@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideRouter } from '@angular/router';
+import { provideRouter, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './app/pages/home/home.component';
 import { ServicesComponent } from './app/pages/services/services.component';
 import { BookingComponent } from './app/pages/booking/booking.component';
@@ -10,7 +10,7 @@ import { AdminComponent } from './app/pages/admin/admin.component';
 @Component({
   selector: 'app-root',
   template: '<router-outlet></router-outlet>',
-  imports: []
+  imports: [RouterOutlet]
 })
 export class App {}
 
